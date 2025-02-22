@@ -15,9 +15,9 @@ class Subject(models.Model):
 
 
 class Attendance(models.Model):
-    student = models.ForeignKey(Student,on_delete=models.CASCADE)
-    subject = models.ForeignKey(Student,on_delete=models.CASCADE)
+    student = models.ForeignKey(Student,on_delete=models.CASCADE, related_name='attendances')
+    subject = models.ForeignKey(Student,on_delete=models.CASCADE, related_name='Subject_attendances')
     date = models.DateField()
     is_present = models.BooleanField(default=False)
-    
+
 
