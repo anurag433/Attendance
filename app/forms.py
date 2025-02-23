@@ -15,4 +15,3 @@ class AttendanceForm(forms.ModelForm):
     class Meta :
         model = Attendance
         fields = ['student','subject','date','is_present']
-
