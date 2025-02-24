@@ -4,12 +4,12 @@ from .models import Student,Teacher,Attendance
 class Student_Registration(forms.ModelForm):
     class Meta:
         model= Student
-        fields = ['user', 'roll_no']
+        fields = ['username', 'password']
 
 class Teacher_Registration(forms.ModelForm):
     class Meta : 
         model = Teacher
-        fields = ['user']
+        fields = ['username', 'password']
 
 class AttendanceForm(forms.ModelForm):
     class Meta :
